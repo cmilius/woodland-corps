@@ -1,3 +1,7 @@
-# Welcome to the Woodland Corps homepage
+---
+title: "Woodland Corps"
+---
+
+# Welcome to the {{ page.title }} homepage
 
 {{ site.description }}
