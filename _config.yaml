@@ -1,0 +1,41 @@
+# Jekyll Configuration File
+
+# Site settings made available as site.PARAMETER_NAME variable in every page within the website
+title: Woodland Corps
+email: contact@fakeemail.com
+description: >
+  A website for the Woodland Corps, a group of Dungeons and Dragons adventurers.
+#baseurl: "" # Base URL for the site (e.g., /woodland-corps)
+#url: "https://yourusername.github.io" # Your GitHub Pages URL
+
+# Build settings
+# markdown: kramdown
+# permalink: pretty
+
+# # Collections
+# collections:
+#   characters:
+#     output: true
+#   blog:
+#     output: true
+
+# # Plugins
+# plugins:
+#   - jekyll-feed
+#   - jekyll-seo-tag
+
+# # Defaults
+# defaults:
+#   - scope:
+#       path: ""
+#     values:
+#       layout: default
+
+# # Exclude files from the build
+# exclude:
+#   - README.md
+#   - _layout.md
+
+# # Include additional files
+# include:
+#   - .htaccess
