@@ -1,4 +1,9 @@
-# Sulu Vapen
+---
+title: "Sulu Vapen"
+layout: default
+---
+
+# {{ page.title }}
 
 ![Sulu](../assets/images/Sulu_Small.gif)
 

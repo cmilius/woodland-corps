@@ -1,11 +1,8 @@
 ---
 title: "Woodland Corps"
+layout: default
 ---
-
-{% include navigation.html %}
 
 # Welcome to the {{ page.title }} homepage
 
 {{ site.description }}
-
-{% include footer.html %}
