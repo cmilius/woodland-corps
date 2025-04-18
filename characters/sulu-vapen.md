@@ -1,6 +1,6 @@
 ---
-title: "Sulu Vapen"
 layout: default
+title: "Sulu Vapen"
 ---
 
 # {{ page.title }}

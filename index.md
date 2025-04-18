@@ -1,6 +1,6 @@
 ---
-title: "Woodland Corps"
 layout: default
+title: "Woodland Corps"
 ---
 
 # Welcome to the {{ page.title }} homepage
