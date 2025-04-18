@@ -8,6 +8,8 @@ description: >
 #baseurl: "" # Base URL for the site (e.g., /woodland-corps)
 #url: "https://yourusername.github.io" # Your GitHub Pages URL
 
+theme: jekyll-theme-cayman
+
 # Build settings
 # markdown: kramdown
 # permalink: pretty
