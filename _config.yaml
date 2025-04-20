@@ -8,11 +8,22 @@ description: >
 #baseurl: "" # Base URL for the site (e.g., /woodland-corps)
 #url: "https://yourusername.github.io" # Your GitHub Pages URL
 
-theme: jekyll-theme-cayman
-
 # Build settings
+theme: minima
 # markdown: kramdown
 # permalink: pretty
+
+# Minima-specific settings (applicable to Minima v3 and above only)
+# -----------------------------------------------------------------
+minima:
+skin: auto
+#   Minima skin selection. Available skins are:
+#     * classic            Default, light color scheme.
+#     * dark               Dark variant of the classic skin.
+#     * auto               Adaptive skin based on the classic and dark skins.
+#     * solarized-light    Light variant of solarized color scheme.
+#     * solarized-dark     Dark variant of solarized color scheme.
+#     * solarized          Adaptive skin for solarized color scheme skins.
 
 # # Collections
 # collections:
