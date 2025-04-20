@@ -2,7 +2,6 @@
 
 # Site-wide settings: Site settings made available as site.PARAMETER_NAME variable in every page within the website
 title: Woodland Corps
-email: contact@fakeemail.com
 
 # The `>` after `description:` means to ignore line-breaks until next key. If
 #   you wish to omit the line-break after the end of text, use `>-` instead.
@@ -33,8 +32,8 @@ minima:
   #   If you wish to link only specific pages in the site-navigation, use this
   #   and list the `path` property (as represented via Liquid) of the pages in
   #   the order they should be rendered.
-  nav_pages:
-    - sulu-vapen.md
+  # nav_pages:
+  #   - sulu-vapen.md
 
   # Set to `true` to show excerpts on the homepage.
   # show_excerpts: false
