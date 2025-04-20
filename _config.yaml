@@ -64,12 +64,16 @@ minima:
   #   part of social-links list.
   # hide_site_feed_link: false
 
-# # Collections
-# collections:
-#   characters:
-#     output: true
-#   blog:
-#     output: true
+# Collections
+# The key says that our site includes this collection of files, and the mapping associated with them. 
+# output: true, configures an option for that collection, telling Jekyll to create a rendered HTML page from the content of each of these files.
+# Jekyll will look for a _folder in our site repository that shares its name with the collection we defined, but with a preceding underscore in the folder name, 
+# and build the collection from its contents.
+collections:
+  characters: # key
+    output: true
+  # blog:
+  #   output: true
 
 # # Plugins
 # plugins:
