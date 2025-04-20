@@ -3,8 +3,6 @@ layout: post
 title: "Sulu Vapen"
 ---
 
-# {{ page.title }}
-
 ![Sulu](../assets/images/Sulu_Small.gif)
 
 ## Backstory
