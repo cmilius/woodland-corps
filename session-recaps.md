@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 title: Session Recaps
 ---
 
@@ -9,4 +9,5 @@ Welcome to the Woodland Corps session recaps! Below is a list of our recent adve
 
 {% for recap in site.session-recaps reversed %}
   {{ recap.date | date: "%B %d, %Y" }} - {{ recap.title }}
+  {{ recap.content }}
 {% endfor %}
