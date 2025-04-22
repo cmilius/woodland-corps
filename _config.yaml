@@ -71,8 +71,8 @@ minima:
 collections:
   characters: # key
     output: true
-  # blog:
-  #   output: true
+  session-recaps:
+    output: true
 
 # # Plugins
 # plugins:
