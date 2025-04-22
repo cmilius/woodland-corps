@@ -7,5 +7,4 @@ Welcome to the Woodland Corps character roster! Below is a list of our adventure
 
 {% for character in site.characters %}
 - [{{ character.title }}]({{ character.url | relative_url }})
-  <!-- {{ character.content }} -->
 {% endfor %}
