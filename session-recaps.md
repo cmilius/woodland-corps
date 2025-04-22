@@ -3,7 +3,7 @@ layout: page
 title: Session Recaps
 ---
 
-Welcome to the Woodland Corps session recaps! Below is a list of our recent adventures. Click on a recap to read more.
+After every session, our DM Next Door recounts the shenanigans that took place.  Click on a recap to read more and enjoy.
 
 {% for recap in site.session-recaps reversed %}
 # [{{ recap.title }}]({{ recap.url | relative_url }}) - {{ recap.date | date: "%B %d, %Y" }}
