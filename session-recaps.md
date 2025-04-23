@@ -13,6 +13,6 @@ After every session, our DM Next Door recounts the shenanigans that took place. 
 
 ---
 
-##### {{ recap.date | date: "%B %d, %Y" }}  
-
+##### {{ recap.date | date: "%B %d, %Y" }}
+  
 {% endfor %}
