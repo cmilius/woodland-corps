@@ -3,7 +3,7 @@ layout: post
 title: "Sulu Vapen"
 ---
 
-![Sulu](../assets/images/Sulu_Small.gif)
+![Sulu](../assets/images/player-characters/sulu/sulu-small.gif)
 
 ## Backstory
 

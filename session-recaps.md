@@ -7,5 +7,7 @@ After every session, our DM Next Door recounts the shenanigans that took place. 
 
 {% for recap in site.session-recaps reversed %}
 # [{{ recap.title }}]({{ recap.url | relative_url }}) - {{ recap.date | date: "%B %d, %Y" }}
-  {{ recap.content }}
+{{ recap.content }}
+---
+### {{ recap.date | date: "%B %d, %Y" }}
 {% endfor %}
