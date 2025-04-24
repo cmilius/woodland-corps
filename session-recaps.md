@@ -11,9 +11,11 @@ After every session, our DM Next Door recounts the shenanigans that took place. 
 ![Session Image]({{ "assets/images/session-recaps/" | append: recap.image | relative_url }})
 {% endif %}
 
-# [{{ recap.title }}]({{ recap.url | relative_url }})
+# {{ recap.title }}
 
-{{ recap.content }}
+{{ recap.excerpt }}
+
+[Read more...]({{ recap.url | relative_url }})
 
 ---
 
