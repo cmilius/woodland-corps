@@ -13,9 +13,7 @@ Welcome to the Woodland Corps character roster! Below is a list of our adventure
 
 # {{ character.title }}
 
-##### {{ character.race }}
-
-##### {{ character.class }}
+##### {{ character.race }} | {{ character.class }}
 
 [Read more...]({{ character.url | relative_url }})
 
