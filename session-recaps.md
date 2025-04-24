@@ -13,7 +13,7 @@ After every session, our DM Next Door recounts the shenanigans that took place. 
 
 # [{{ recap.title }}]({{ recap.url | relative_url }})
 
-{{ recap.content }}
+{{ recap.content | truncatewords: 50 }}
 
 ---
 
