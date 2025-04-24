@@ -7,6 +7,10 @@ After every session, our DM Next Door recounts the shenanigans that took place. 
 
 {% for recap in site.session-recaps reversed %}
 
+{% if recap.image %}  
+![Session Image]({{ "assets/images/session-recaps/" | append: recap.image | relative_url }})
+{% endif %}
+
 # [{{ recap.title }}]({{ recap.url | relative_url }})
 
 {{ recap.content }}
@@ -14,5 +18,5 @@ After every session, our DM Next Door recounts the shenanigans that took place. 
 ---
 
 ##### {{ recap.date | date: "%B %d, %Y" }}
-  
+
 {% endfor %}
