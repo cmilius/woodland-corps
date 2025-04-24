@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Sulu Vapen"
+race: "Triton"
+class: "Sorcerer"
 ---
 
 ![Sulu](../assets/images/player-characters/sulu/sulu-small.gif)
