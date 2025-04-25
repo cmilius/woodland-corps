@@ -2,8 +2,8 @@
 layout:post
 ---
 
-{% if recap.image %}  
-![Session Image]({{ "assets/images/session-recaps/" | append: recap.image | relative_url }})
+{% if image %}  
+![Session Image]({{ "assets/images/session-recaps/" | append: image | relative_url }})
 {% endif %}
 
 {{ content }}
