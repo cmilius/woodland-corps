@@ -2,10 +2,6 @@
 layout:post
 ---
 
-{% if image %}  
-![Session Image]({{ "assets/images/session-recaps/" | append: image | relative_url }})
-{% endif %}
-
 {{ content }}
 
 {% if page.previous %}
