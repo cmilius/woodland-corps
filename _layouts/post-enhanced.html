@@ -4,10 +4,10 @@ layout:post
 
 {{ content }}
 
-{% if page.previous %}
-[Previous Post]({{ page.previous.url | relative_url }})
+{% if previous %}
+[Previous Post]({{ previous.url | relative_url }})
 {% endif %}
 
-{% if page.next %}
-[Next Post]({{ page.next.url | relative_url }})
+{% if next %}
+[Next Post]({{ next.url | relative_url }})
 {% endif %}
