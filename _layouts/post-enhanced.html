@@ -4,11 +4,16 @@ layout: post
 
 {{ content }}
 
-{% if previous %}
-[Previous Post]({{ previous.url | relative_url }})
-{% endif %}
+<div style="display: flex; justify-content: space-between; margin-top: 20px;">
+    {% if page.previous.url %}
+        <a href="{{ page.previous.url | relative_url }}" style="text-decoration: none; padding: 10px 20px; border-radius: 5px; text-align: center;">
+            &larr; {{ page.previous.title }}
+        </a>
+    {% endif %}
 
-{% if next %}
-[Next Post]({{ next.url | relative_url }})
-{% endif %}
-
+    {% if page.next.url %}
+        <a href="{{ page.next.url | relative_url }}" style="text-decoration: none; padding: 10px 20px; border-radius: 5px; text-align: center;">
+            {{ page.next.title }} &rarr;
+        </a>
+    {% endif %}
+</div>
