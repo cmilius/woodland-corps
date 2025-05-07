@@ -4,4 +4,4 @@ layout: home
 
 {{ site.description }}
 
-![I needed to fill some whitespace](assets/images/mayonnaise_burning.png)
+![I needed to fill some whitespace]({{ "assets/images/woodland-corps-transparent.png" | relative_url }})
