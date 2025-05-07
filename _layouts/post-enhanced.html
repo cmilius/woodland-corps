@@ -2,6 +2,13 @@
 layout: post
 ---
 
+{% if page.image %}  
+<div>
+    <img src="{{ page.image | relative_url }}" alt="Image">
+</div>
+<br>
+{% endif %}
+
 {{ content }}
 
 <div style="display: flex; justify-content: space-between; margin-top: 20px;">

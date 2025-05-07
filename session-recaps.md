@@ -8,17 +8,17 @@ After every session, our DM Next Door recounts the shenanigans that took place. 
 {% for recap in site.session-recaps reversed %}
 
 {% if recap.image %}  
-![Session Image]({{ "assets/images/session-recaps/" | append: recap.image | relative_url }})
+![Session Image]({{ recap.image | relative_url }})
 {% endif %}
 
 # {{ recap.title }}
+
+##### {{ recap.date | date: "%B %d, %Y" }}
 
 {{ recap.excerpt }}
 
 [Read more...]({{ recap.url | relative_url }})
 
 ---
-
-##### {{ recap.date | date: "%B %d, %Y" }}
 
 {% endfor %}
