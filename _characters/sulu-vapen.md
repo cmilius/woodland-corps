@@ -3,9 +3,15 @@ layout: post
 title: "Sulu Vapen"
 race: "Triton"
 class: "Sorcerer"
+profile-picture: "assets/images/player-characters/sulu/sulu-portrait-transparent.png"
 ---
 
-![Sulu](../assets/images/player-characters/sulu/sulu-small.gif)
+"This brown water tastes so good!" ~ Sulu
+
+![Sulu]({{ "assets/images/player-characters/sulu/sulu-small.gif" | relative_url }})
+
+<!-- This is your introduction paragraph. -->
+To say Sulu has had a rough go of it would certainly be something of an understatement, not that he’s the type to let it show. First, he was sent away under the guise of a foreign exchange program where he spent many years acclimating to a completely alien world. Here, he would do his best to reign in a mysterious command of fire beneath his bubbling charm and wondrous view of the surface world. And now, if certain figures are to be believed, it seems Sulu was quietly exiled from his people – and that his own body has become a conduit for a primordial’s relic, the very enemy tritons have sworn themselves to defeat and protect Edena against.
 
 ## Backstory
 
