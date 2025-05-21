@@ -10,7 +10,7 @@ gallery: "assets/images/player-characters/po/"
 <!-- Character tagline -->
 A half-orc monk with a poetic soul, detective Po is always ready to get to the bottom of any mystery.
 
-![Po]({{ "assets/images/player-characters/po/po-small.gif" | relative_url }})
+![Po]({{ page.profile-picture | relative_url }})
 
 ## Biography
 
@@ -26,4 +26,4 @@ Backstory here
 
 ## Gallery
 
-{% include gallery.html %}
+{% include gallery.html gallery=page.gallery %}

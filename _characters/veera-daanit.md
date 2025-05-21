@@ -26,4 +26,4 @@ Backstory here
 
 ## Gallery
 
-{% include gallery.html %}
+{% include gallery.html gallery=page.gallery %}

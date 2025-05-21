@@ -10,7 +10,7 @@ gallery: "assets/images/player-characters/kiwi/"
 <!-- Character tagline -->
 Kiwi, the laid-back swordscat, dances on the edge of chaos with a blade that holds secrets as sharp as its edge.
 
-![Kiwi]({{ "assets/images/player-characters/kiwi/kiwi-portrait-transparent.png" | relative_url }})
+![Kiwi]({{ page.profile-picture | relative_url }})
 
 ## Biography
 
@@ -26,4 +26,4 @@ Backstory here
 
 ## Gallery
 
-{% include gallery.html %}
+{% include gallery.html gallery=page.gallery %}

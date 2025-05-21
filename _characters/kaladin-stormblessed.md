@@ -10,7 +10,7 @@ gallery: "assets/images/player-characters/kaladin/"
 <!-- Character tagline -->
 From a green boy to an ascendant being, not sure what he is at this point...
 
-![Kaladin]({{ "assets/images/player-characters/kaladin/kaladin-portrait-transparent.png" | relative_url }})
+![Kaladin]({{ page.profile-picture | relative_url }})
 
 ## Biography
 
@@ -26,4 +26,4 @@ Backstory here
   
 ## Gallery
 
-{% include gallery.html %}
+{% include gallery.html gallery=page.gallery %}

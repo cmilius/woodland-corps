@@ -34,4 +34,4 @@ And so his reputation as a fire hazard began...
 
 ## Gallery
 
-{% include gallery.html %}
+{% include gallery.html gallery=page.gallery %}

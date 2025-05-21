@@ -5,7 +5,7 @@
 
 <div class="gallery">
     {% for image in site.static_files %}
-        {% if image.path contains page.gallery %}
+        {% if image.path contains include.gallery %}
             <div class="gallery-item">
                 <img src="{{ image.path | relative_url }}" alt="Sulu Image">
             </div>
@@ -31,6 +31,7 @@
         flex-direction: column;
         align-items: center;
         transition: box-shadow 0.2s;
+        cursor: pointer;
     }
     .gallery-item:hover {
         box-shadow: 0 4px 16px rgba(0,0,0,0.18);
@@ -44,4 +45,74 @@
         object-fit: contain;
         border-bottom: 1px solid #eee;
     }
+    /* Modal styles */
+    .gallery-modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.8);
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery-modal.active {
+        display: flex;
+    }
+    .gallery-modal img {
+        max-width: 90vw;
+        max-height: 90vh;
+        border-radius: 10px;
+        box-shadow: 0 4px 32px rgba(0,0,0,0.4);
+        background: #fff;
+        padding: 10px;
+    }
+    .gallery-modal .close-btn {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        font-size: 2.5rem;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        z-index: 1001;
+        background: none;
+        border: none;
+    }
 </style>
+<div id="gallery-modal" class="gallery-modal">
+    <button class="close-btn" aria-label="Close">&times;</button>
+    <img src="" alt="Expanded Image">
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById('gallery-modal');
+        const modalImg = modal.querySelector('img');
+        const closeBtn = modal.querySelector('.close-btn');
+        document.querySelectorAll('.gallery-item img').forEach(img => {
+            img.addEventListener('click', function() {
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                modal.classList.add('active');
+            });
+        });
+        closeBtn.addEventListener('click', function() {
+            modal.classList.remove('active');
+            modalImg.src = '';
+        });
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                modalImg.src = '';
+            }
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                modal.classList.remove('active');
+                modalImg.src = '';
+            }
+        });
+    });
+</script>

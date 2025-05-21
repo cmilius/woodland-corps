@@ -10,7 +10,7 @@ gallery: "assets/images/player-characters/mari/"
 <!-- Character tagline -->
 A high elf artificer with a mysterious past, Mari crafts wonders while unraveling the secrets of her lineage.
 
-![Mari]({{ "assets/images/player-characters/mari/mari-small.gif" | relative_url }})
+![Mari]({{ page.profile-picture | relative_url }})
 
 ## Biography
 
@@ -26,4 +26,4 @@ Backstory here
 
 ## Gallery
 
-{% include gallery.html %}
+{% include gallery.html gallery=page.gallery %}
