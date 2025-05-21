@@ -4,6 +4,7 @@ title: "Mari"
 race: "High Elf"
 class: "Artificer"
 profile-picture: "assets/images/player-characters/mari/mari-portrait-transparent.png"
+gallery: "assets/images/player-characters/mari/"
 ---
 
 <!-- Character tagline -->
@@ -22,3 +23,7 @@ Backstory here
 ## Quotes
 
 - "Quote here"
+
+## Gallery
+
+{% include gallery.html %}

@@ -4,6 +4,7 @@ title: "Sulu Vapen"
 race: "Triton"
 class: "Sorcerer"
 profile-picture: "assets/images/player-characters/sulu/sulu-portrait-transparent.png"
+gallery: "assets/images/player-characters/sulu/"
 ---
 
 <!-- Character tagline -->
@@ -31,8 +32,11 @@ And so his reputation as a fire hazard began...
 
 - "This brown water tastes so good!"
 
-<!-- ## Gallery
+## Gallery
 
+{% include gallery.html %}
+
+<!--
 <div class="character-gallery">
     {% for image in site.static_files %}
         {% if image.path contains "assets/images/player-characters/sulu/" %}

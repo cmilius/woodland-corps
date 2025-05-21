@@ -4,6 +4,7 @@ title: "Kiwi"
 race: "Tabaxi"
 class: "Fighter"
 profile-picture: "assets/images/player-characters/kiwi/kiwi-portrait-transparent.png"
+gallery: "assets/images/player-characters/kiwi/"
 ---
 
 <!-- Character tagline -->
@@ -22,3 +23,7 @@ Backstory here
 ## Quotes
 
 - "Quote here"
+
+## Gallery
+
+{% include gallery.html %}

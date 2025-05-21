@@ -4,6 +4,7 @@ title: "Yuka Tonraq"
 race: "Minotaur"
 class: "Druid"
 profile-picture: "assets/images/player-characters/yuka/yuka-portrait-transparent.png"
+gallery: "assets/images/player-characters/yuka/"
 ---
 
 <!-- Character tagline -->
@@ -22,3 +23,7 @@ Backstory here
 ## Quotes
 
 - "Quote here"
+
+## Gallery
+
+{% include gallery.html %}

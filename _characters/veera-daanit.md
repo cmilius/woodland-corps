@@ -4,6 +4,7 @@ title: "Veera D'aanit"
 race: "Narzugon"
 class: "Blood Hunter"
 profile-picture: "assets/images/player-characters/veera/veera-portrait-transparent.png"
+gallery: "assets/images/player-characters/veera/"
 ---
 
 <!-- Character tagline -->
@@ -22,3 +23,7 @@ Backstory here
 ## Quotes
 
 - "Quote here"
+
+## Gallery
+
+{% include gallery.html %}

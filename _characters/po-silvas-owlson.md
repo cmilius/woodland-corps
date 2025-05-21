@@ -4,6 +4,7 @@ title: "Po Silvas-Owlson"
 race: "Half Orc"
 class: "Monk"
 profile-picture: "assets/images/player-characters/po/po-portrait-transparent.png"
+gallery: "assets/images/player-characters/po/"
 ---
 
 <!-- Character tagline -->
@@ -22,3 +23,7 @@ Backstory here
 ## Quotes
 
 - "Quote here"
+
+## Gallery
+
+{% include gallery.html %}

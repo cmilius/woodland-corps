@@ -1,0 +1,32 @@
+<!-- This code snippet creates a responsive image gallery using Jekyll. 
+     It iterates through the static files in the site and displays images 
+     that match the specified gallery path. The CSS styles ensure that the 
+     images are displayed in a flexible grid layout. -->
+
+<div class="gallery">
+    {% for image in site.static_files %}
+        {% if image.path contains page.gallery %}
+            <div class="gallery-item">
+                <img src="{{ image.path | relative_url }}" alt="Sulu Image">
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<style>
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .gallery-item {
+        flex: 1 1 calc(33.333% - 10px);
+        box-sizing: border-box;
+    }
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        max-height: 300px;
+    }
+</style>

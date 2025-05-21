@@ -4,6 +4,7 @@ title: "Kaladin Stormblessed"
 race: "Aasimar"
 class: "Druid"
 profile-picture: "assets/images/player-characters/kaladin/kaladin-portrait-transparent.png"
+gallery: "assets/images/player-characters/kaladin/"
 ---
 
 <!-- Character tagline -->
@@ -22,3 +23,7 @@ Backstory here
 ## Quotes
 
 - "Quote here"
+  
+## Gallery
+
+{% include gallery.html %}
