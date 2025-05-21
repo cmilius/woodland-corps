@@ -35,26 +35,3 @@ And so his reputation as a fire hazard began...
 ## Gallery
 
 {% include gallery.html %}
-
-<!--
-<div class="character-gallery">
-    {% for image in site.static_files %}
-        {% if image.path contains "assets/images/player-characters/sulu/" %}
-            <div class="gallery-item">
-                <img src="{{ image.path | relative_url }}" alt="Sulu Image">
-            </div>
-        {% endif %}
-    {% endfor %}
-</div>
-
-<style>
-.character-gallery {
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
-}
-.gallery-item img {
-    max-height: 200px;
-    border-radius: 5px;
-}
-</style> -->
