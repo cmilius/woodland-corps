@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+<div class="card">
+    <div class="card-image">
+        <img src="{{ include.profile-picture | relative_url }}" alt="Kaladin" />
+    </div>
+    <div class="card-content">
+        <h2>{{ include.name }}</h2>
+        <p><strong>Race:</strong> {{ include.race }}</p>
+        <p><strong>Class:</strong> {{ include.class }}</p>
+        <p>{{ include.excerpt }}</p>
+        <p><a href="{{ include.url | relative_url }}">Read more...</a></p>
+    </div>
+</div>
