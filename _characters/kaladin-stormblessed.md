@@ -3,7 +3,7 @@ layout: post
 title: "Kaladin Stormblessed"
 race: "Aasimar"
 class: "Druid"
-profile-picture: "assets/images/player-characters/kaladin/kaladin-portrait-transparent.png"
+profile-picture: "assets/images/player-characters/kaladin/Kaladin-portrait-transparent-BG.webp"
 gallery: "assets/images/player-characters/kaladin/"
 ---
 
