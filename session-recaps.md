@@ -18,7 +18,7 @@ After every session, our DM Next Door recounts the shenanigans that took place. 
 {% endif %}
     <div class="card-content">
         <h2>{{ recap.title }}</h2>
-        <p>##### {{ recap.date | date: "%B %d, %Y" }}</p>
+        <p>{{ recap.date | date: "%B %d, %Y" }}</p>
         <p>{{ recap.excerpt }}</p>
         <p><a href="{{ recap.url | relative_url }}">Read more...</a></p>
     </div>
