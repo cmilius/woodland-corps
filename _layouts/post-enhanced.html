@@ -2,11 +2,20 @@
 layout: post
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
 {% if page.image %}  
-<div>
+<div class=card>
     <img src="{{ page.image | relative_url }}" alt="Image">
+    <div>
+        {% if page.artist %}
+            {% include photo-credit.html artist=page.artist %}
+        {% endif %}
+    </div>
 </div>
+
 <br>
+
 {% endif %}
 
 {{ content }}

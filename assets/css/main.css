@@ -63,3 +63,8 @@
 .card-actions button:hover {
   background: #355c3a;
 }
+
+.photo-credit {
+  font-size: 0.8em;
+  color: #888;
+}

@@ -1,0 +1,14 @@
+{% assign artist = site.data.artists[include.artist] %}
+{% if artist %}
+    <div class="photo-credit">
+        image by 
+        {% if artist.website %}
+            <a href="{{ artist.website }}" target="_blank" rel="noopener">{{ artist.name }}</a>
+        {% else %}
+            {{ artist.name }}
+        {% endif %}
+        {% if artist.instagram %}
+            (<a href="{{ artist.instagram }}" target="_blank" rel="noopener">Instagram</a>)
+        {% endif %}
+    </div>
+{% endif %}
