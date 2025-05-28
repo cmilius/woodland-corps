@@ -14,6 +14,7 @@ To set up your development environment for local development, follow the [instru
 
 - Open a git bash terminal in the project's root folder
 - Run `exec jekyll serve`
+> Note: Jekyll’s built-in server does not automatically reload configuration changes from _config.yml. If you update _config.yml, you must stop the running server and restart it for the new settings to take effect. 
 - Your site will be made available at http://localhost:4000
 - Jekyll will continue to run in the terminal and rebuild & deploy the site locally whenever changes are saved to any file
 
