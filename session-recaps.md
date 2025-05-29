@@ -24,6 +24,8 @@ After every session, our DM Next Door recounts the shenanigans that took place. 
     </div>
 </div>
 
+{% unless forloop.last %}
 ---
+{% endunless %}
 
 {% endfor %}

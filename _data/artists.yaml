@@ -1,7 +1,7 @@
 alice_smith:
   name: Alice Smith
-  website: https://instagram.com/alicesmithart
+  hyperlink: https://instagram.com/alicesmithart
+  handle: alicesmithart
 ben_johnson:
   name: Ben Johnson
-  website: https://benjohnsonstudio.com
-  instagram: https://instagram.com/benjohnsonstudio
+  hyperlink: https://benjohnsonstudio.com

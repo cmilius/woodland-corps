@@ -7,6 +7,7 @@ title: Woodland Corps
 #   you wish to omit the line-break after the end of text, use `>-` instead.
 description: >
   A website for the Woodland Corps, a group of Dungeons and Dragons adventurers.
+permalink: pretty
 #baseurl: "" # Base URL for the site (e.g., /woodland-corps)
 #url: "https://yourusername.github.io" # Your GitHub Pages URL
 
@@ -33,8 +34,8 @@ minima:
   #   and list the `path` property (as represented via Liquid) of the pages in
   #   the order they should be rendered.
   nav_pages:
-    - characters.html
-    - session-recaps.html
+    - characters.md
+    - session-recaps.md
 
   # Set to `true` to show excerpts on the homepage.
   # show_excerpts: false
