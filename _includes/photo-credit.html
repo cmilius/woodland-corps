@@ -5,7 +5,7 @@
         {% for artist_key in artists %}
             {% assign artist = site.data.artists[artist_key] %}
             {% if artist %}
-                {% if forloop.first == false %}, {% endif %}
+                {% if forloop.first == false %},{% endif %}
                 {% if artist.hyperlink %}
                     <a href="{{ artist.hyperlink }}" target="_blank" rel="noopener">{{ artist.name }}</a>
                 {% else %}

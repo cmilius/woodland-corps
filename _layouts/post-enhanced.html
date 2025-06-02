@@ -7,14 +7,9 @@ layout: post
 {% if page.image %}  
 <div class=card>
     <img src="{{ page.image | relative_url }}" alt="Image">
-    <div>
-        {% if page.artist %}
-        {% for artist in page.artist %}
-            {{ artist.name }}
-        {% endfor %}
-            {% include photo-credit.html artists=page.artist %}
-        {% endif %}
-    </div>
+    {% if page.artist %}
+        {% include photo-credit.html artists=page.artist %}
+    {% endif %}
 </div>
 
 <br>
