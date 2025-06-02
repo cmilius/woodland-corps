@@ -5,7 +5,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.10);
     padding: 1.5em;
     margin: 1em auto;
-    max-width: 700px;
+    max-width: 600px;
     transition: box-shadow 0.2s;
     display: flex;
     flex-direction: column;
@@ -15,8 +15,7 @@
 /* Card image */
 .card img {
   width: 100%;
-  max-width: 350px;
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 8px 8px;
   object-fit: cover;
   margin-bottom: 1em;
 }
