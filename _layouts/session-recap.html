@@ -4,17 +4,27 @@ layout: post
 
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-{% if page.image %}  
-<div class=card>
-    <img src="{{ page.image | relative_url }}" alt="Image">
-    {% if page.artist %}
-        {% include photo-credit.html artists=page.artist %}
-    {% endif %}
-</div>
 
-<br>
+    {% assign page_name = page.name | remove: '.md' %}
+    {% assign image_files = site.static_files | where_exp: "file", "file.path contains site.data.config.session_recap_image_directory" %}
+    {% for img in image_files %}
+        {% if img.path contains page_name %}
+            <div class=card>
+                <img src="{{ img.path | relative_url }}" alt="RecapImg" />
 
-{% endif %}
+                {% if page.artist %}
+                    {% include photo-credit.html artists=page.artist %}
+                {% endif %}
+
+            </div>
+                
+            {% break %}
+            
+        {% endif %}
+    {% endfor %}
+
+
+
 
 {{ content }}
 
