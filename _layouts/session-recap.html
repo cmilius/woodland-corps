@@ -5,7 +5,7 @@ layout: post
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
 
-    {% assign page_name = page.name | remove: '.md' %}
+    {% assign page_name = page.slug %}
     {% assign image_files = site.static_files | where_exp: "file", "file.path contains site.data.config.session_recap_image_directory" %}
     {% for img in image_files %}
         {% if img.path contains page_name %}
