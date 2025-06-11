@@ -14,9 +14,9 @@ After every session, our DM Next Door recounts the shenanigans that took place. 
     <div class="card-image">
         {% assign recap_name = recap.name | remove: '.md' %}
         {% assign image_files = site.static_files | where_exp: "file", "file.path contains site.data.config.session_recap_image_directory" %}
-        {% for img in image_files %}
-            {% if img.path contains recap_name %}
-                <img src="{{ img.path | relative_url }}" alt="RecapImg" />
+        {% for recap_img in image_files %}
+            {% if recap_img.path contains recap_name %}
+                <img src="{{ recap_img.path | relative_url }}" alt="RecapImg" />
             {% endif %}
         {% endfor %}
     </div>
