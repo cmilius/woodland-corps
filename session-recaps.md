@@ -17,13 +17,9 @@ After every session, our DM Next Door recounts the shenanigans that took place. 
         {% for recap_img in image_files %}
             {% if recap_img.path contains recap_name %}
                 <img src="{{ recap_img.path | relative_url }}" alt="RecapImg" />
-                <p>{{ recap_img.path }} | {{ recap_name }} | End Test</p>
                 {{ break }}
             {% endif %}
         {% endfor %}
-        {% unless recap_name %}
-        <!-- DEBUG: recap_name is blank for {{ recap.title }} -->
-        {% endunless %}
     </div>
 
     <div class="card-content">
