@@ -9,13 +9,17 @@ image_folder: "assets/images/session-recaps"
 After every session, our DM Next Door recounts the shenanigans that took place.  Click on a recap to read more and enjoy.
 
 {% for recap in site.session-recaps reversed %}
+<!-- recap object fields you can use: -->
+<!-- recap.title, recap.date, recap.excerpt, recap.url, recap.slug, recap.path, recap.id, recap.content, recap.categories, recap.tags, etc. -->
+<!-- For the file name, use recap.path or recap.slug. recap.path gives the full path, recap.slug is usually the file name without extension. -->
 
 <div class="card">
     <div class="card-image">
-        {% assign recap_name = recap.slug %}
+        {% assign recap_name = recap.path | split: '/' | last | split: '.' | first %}
         {% assign image_files = site.static_files | where_exp: "file", "file.path contains site.data.config.session_recap_image_directory" %}
         {% for recap_img in image_files %}
-            {% if recap_img.path contains recap_name %}
+            {% assign filename = recap_img.path | split: '/' | last | split: '.' | first %}
+            {% if filename == recap_name %}
                 <img src="{{ recap_img.path | relative_url }}" alt="RecapImg" />
                 {{ break }}
             {% endif %}
