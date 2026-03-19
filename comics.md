@@ -6,7 +6,11 @@ image_folder: "assets/images/comics"
 
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
+<div id="top-anchor"></div>
+
 Our DM Next Door's talents are boundless. Here are some comical depictions of the shenanigans that took place.  Click on a comic and enjoy.
+
+<a href="#bottom-anchor">Go to bottom ↓</a>
 
 {% for comic in site.comics reversed %}
 <!-- comic object fields you can use: -->
@@ -39,3 +43,7 @@ Our DM Next Door's talents are boundless. Here are some comical depictions of th
 {% endunless %}
 
 {% endfor %}
+
+<a href="#top-anchor">Go to top ↑</a>
+
+<div id="bottom-anchor"></div>

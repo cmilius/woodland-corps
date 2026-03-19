@@ -6,7 +6,11 @@ image_folder: "assets/images/session-recaps"
 
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-After every session, our DM Next Door recounts the shenanigans that took place.  Click on a recap to read more and enjoy.
+<div id="top-anchor"></div>
+
+After every session, our DM Next Door recounts the shenanigans that took place.  Click on a recap to read more and enjoy. 
+
+<a href="#bottom-anchor">Go to bottom ↓</a>
 
 {% for recap in site.session-recaps reversed %}
 <!-- recap object fields you can use: -->
@@ -39,3 +43,7 @@ After every session, our DM Next Door recounts the shenanigans that took place. 
 {% endunless %}
 
 {% endfor %}
+
+<a href="#top-anchor">Go to top ↑</a>
+
+<div id="bottom-anchor"></div>
