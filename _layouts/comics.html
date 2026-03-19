@@ -1,0 +1,40 @@
+---
+layout: post
+---
+
+{{ content }}
+
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+    {% assign page_name = page.path | split: '/' | last | split: '.' | first %}
+    {% assign image_files = site.static_files | where_exp: "file", "file.path contains site.data.config.comics_image_directory" %}
+    {% for img in image_files %}
+        {% assign filename = img.path | split: '/' | last | split: '.' | first %}
+        {% if filename == page_name %}
+            <div class=card>
+                <img src="{{ img.path | relative_url }}" alt="RecapImg" />
+
+                {% if page.artist %}
+                    {% include photo-credit.html artists=page.artist %}
+                {% endif %}
+
+            </div>
+                
+            {% break %}
+            
+        {% endif %}
+    {% endfor %}
+
+<div style="display: flex; justify-content: space-between; margin-top: 20px;">
+    {% if page.previous.url %}
+        <a href="{{ page.previous.url | relative_url }}" style="text-decoration: none; padding: 10px 20px; border-radius: 5px; text-align: center;">
+            &larr; {{ page.previous.title }}
+        </a>
+    {% endif %}
+
+    {% if page.next.url %}
+        <a href="{{ page.next.url | relative_url }}" style="text-decoration: none; padding: 10px 20px; border-radius: 5px; text-align: center;">
+            {{ page.next.title }} &rarr;
+        </a>
+    {% endif %}
+</div>
