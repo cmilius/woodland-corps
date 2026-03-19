@@ -16,7 +16,7 @@ While Mari may have been my first kill, Kaladin has the even greater honor of be
 
 ### Backstory
 
-Backstory here
+Kaladin is an Aasimar born to Bjorn and Cilian Stormblessed, a human couple in a small farming village named Rosemere. The peculiar looks of their newborn son was troubling to the town but with no knowledge of what made him different, he was just seen as an outcast or threat. During his formative years because of his outlandish looks he was ignored by the other children and found friendship in an unlikely place. A wizened monk, named Thibault, who lived not far from town in the woods nearby took him under his wing and taught him much of the nature living around him and the animals that inhabit it. With lack of friends to play and a wise mentor Kaladin flourished in his study and quickly showed promise as a young fledgling druid. He even met and gained the trust of a Mink he named Sylphrena. With his Druid path showing promise and a great aptitude for animals and natural history Kal was accepted into the training Academy of the Woodland Corps. He did great in all classes pertaining to his love for nature but strategy, survival, and logic were very difficult for him. In an academy with more diverse groups and skill sets he found more friends and even though he’s no social butterfly he started to make friends and branch out more, quite literally. Strangely his affinity to nature and his mysterious heritage has started to show in a very real way as his body is seeming to become one with nature. Kaladin is apprehensive of what's happening to him but instead of facing the problem head on he has only buried himself deeper into his path for becoming a stronger druid to protect nature.
 
 ## Quotes
 
