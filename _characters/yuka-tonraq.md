@@ -20,7 +20,7 @@ Backstory here
 
 ## Quotes
 
-- "Quote here"
+- "Let's limit our casualties to only Yuka..."
 
 ## Gallery
 
