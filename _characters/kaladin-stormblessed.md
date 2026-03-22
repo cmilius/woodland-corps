@@ -20,7 +20,7 @@ Kaladin is an Aasimar born to Bjorn and Cilian Stormblessed, a human couple in a
 
 ## Quotes
 
-- "Quote here"
+- "I swear this is my last drink!"
   
 ## Gallery
 
